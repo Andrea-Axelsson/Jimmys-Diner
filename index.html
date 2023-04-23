@@ -1,0 +1,75 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       
+       <link rel="stylesheet" href="index.css">
+    
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <div class="header-info">
+                    <h1>Jimmy’s Diner</h1>
+                    <p class="h2">The best burgers and pizzas in town.</p>
+                </div>
+            </header>
+            <main class="feed" id="feed">
+                
+                <!-- ORDER FOOD SECTION -->
+                
+                <section id="food-container">
+                    
+                </section>
+                
+                <!-- YOUR ORDER SECTION -->
+                
+                <section>
+                    <div id="order-container" class="order-container">
+                        <h3 class="your-order-text">Your order</h3>
+                        <div id="order">
+                            <!-- ORDER CONTENT -->
+                        </div>
+                            <div class="total-price">
+                                <h3>Total price:</h3>
+                                <p id="total-cost" class="total-cost"></p>
+                            </div>
+                            <button id="complete-order-btn" class="button-green">Complete order</button>
+                    </div>
+                </section>
+                
+                <!-- PAYMENT MODAL -->
+                
+                <section>
+                    <div class="modal-body" id="modal-body">
+                        <i class="fa-solid fa-arrow-left-long exit-arrow" id ="exit-arrow"></i>
+                        <p>Enter card details</p>
+                        <form>
+                            <input class="input" type="text" id="name" name="name" placeholder="Enter your name" required>
+                            <input class="input" type="text" id="credit-card-number" name="credit-card-number" pattern="[0-9]{13,16}" placeholder="Enter card number" required>
+                            <input class="input" type="text" id="cvv-number" name="cvv-number" pattern="[0-9]{3}" placeholder="Enter CVV" required>
+                            <input type="submit" id="pay-btn" class="button-green" value="Pay"></input>
+                        </form>
+                        
+                    </div>
+                </section>
+                
+                <!-- THANK YOU MODAL -->
+                
+                <section>
+                    <div class="thank-you-modal" id="thank-you-modal">
+                        <h3>Thank you for your purchase!</h3>
+                        <p>Your food is on it's way!</p>
+                        <img class="gif" src="images/restaurant.gif">
+                    </div>
+                </section>
+                
+            </div>
+        </div>
+        </main>
+        
+	<script src="index.js" type="module"></script>
+    </body>
